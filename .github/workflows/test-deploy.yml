@@ -1,0 +1,27 @@
+# Qualitätssicherung: prüft bei jedem Pull Request gegen main,
+# ob die Website fehlerfrei baut – ohne sie zu veröffentlichen.
+name: Test deployment
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-deploy:
+    name: Test build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Abhängigkeiten installieren
+        run: npm ci
+
+      - name: Probe-Build der Website
+        run: npm run build
