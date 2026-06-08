@@ -16,12 +16,12 @@ const config = {
   },
 
   // ANPASSEN: GitHub-Organisation bzw. -Benutzername
-  url: 'https://ihre-organisation.github.io',
+  url: 'https://astra-docusaurus.github.io',
   // ANPASSEN: '/<Repository-Name>/' – muss exakt dem Repo-Namen entsprechen
   baseUrl: '/astra-fachhandbuch-bim/',
 
   // ANPASSEN: GitHub-Organisation und Repository-Name
-  organizationName: 'ihre-organisation',
+  organizationName: 'astra',
   projectName: 'astra-fachhandbuch-bim',
 
   trailingSlash: false,
@@ -49,7 +49,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // ANPASSEN: erzeugt den Link "Diese Seite bearbeiten"
           editUrl:
-            'https://github.com/ihre-organisation/astra-fachhandbuch-bim/edit/main/',
+            'https://github.com/astra-docusaurus/astra-fachhandbuch-bim/edit/main/',
           showLastUpdateTime: true,
         },
         blog: false,
@@ -70,7 +70,7 @@ const config = {
         title: 'ASTRA Fachhandbuch BIM',
         items: [
           {
-            href: 'https://github.com/ihre-organisation/astra-fachhandbuch-bim',
+            href: 'https://github.com/astra-docusaurus/astra-fachhandbuch-bim',
             label: 'GitHub',
             position: 'right',
           },
