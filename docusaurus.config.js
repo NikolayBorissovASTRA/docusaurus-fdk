@@ -21,7 +21,7 @@ const config = {
   baseUrl: '/astra-fachhandbuch-bim/',
 
   // ANPASSEN: GitHub-Organisation und Repository-Name
-  organizationName: 'astra',
+  organizationName: '',
   projectName: 'astra-fachhandbuch-bim',
 
   trailingSlash: false,
